@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {butPref = id; }; 
+            CLASS = SSTEST; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {myView = id; myWin = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = woodsView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}

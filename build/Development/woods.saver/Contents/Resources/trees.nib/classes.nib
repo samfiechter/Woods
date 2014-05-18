@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {Cancel = id; OK = id; }; 
+            CLASS = ConfigControl; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {NumFlakes = id; NumTrees = id; TreeComplex = id; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = "woods_config"; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }
+    ); 
+    IBVersion = 1; 
+}

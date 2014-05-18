@@ -1,0 +1,47 @@
+rule DefineHeaderDependencies
+{
+	INCLUDES "wrapper.cc" : "/Users/sam/Documents/src/woods/wrapper.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/wrapper.h" : "/Users/sam/Documents/src/woods/tree.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/wrapper.h" : "/System/Library/Frameworks/AGL.framework/Headers/agl.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/wrapper.h" : "/System/Library/Frameworks/OpenGL.framework/Headers/gl.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/tree.h" : "/Users/sam/Documents/src/woods/ring.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/tree.h" : "/Users/sam/Documents/src/woods/rand.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/rand.h" : "/usr/include/time.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/rand.h" : "/usr/include/stdlib.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/rand.h" : "/usr/include/math.h" ;
+	INCLUDES "woodsView.M" : "/Users/sam/Documents/src/woods/woodsView.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/woodsView.h" : "/System/Library/Frameworks/ScreenSaver.framework/Headers/ScreenSaver.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/woodsView.h" : "/Users/sam/Documents/src/woods/wrapper.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/woodsView.h" : "/Users/sam/Documents/src/woods/ConfigControl.h" ;
+	INCLUDES "/Users/sam/Documents/src/woods/ConfigControl.h" : "/System/Library/Frameworks/ScreenSaver.framework/Headers/ScreenSaver.h" ;
+	INCLUDES "rand.cc" : "/Users/sam/Documents/src/woods/rand.h" ;
+	INCLUDES "ring.cc" : "/Users/sam/Documents/src/woods/ring.h" ;
+	INCLUDES "tree.cc" : "/Users/sam/Documents/src/woods/tree.h" ;
+	INCLUDES "ConfigControl.mm" : "/Users/sam/Documents/src/woods/ConfigControl.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/draw.cc" : "/Users/sam/Documents/src/3d/draw.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/draw.h" : "/usr/include/X11/extensions/xf86vmode.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/draw.h" : "/usr/include/X11/keysym.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/draw.h" : "/Users/sam/Documents/src/3d/point.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/point.h" : "/Users/sam/Documents/src/3d/ptTrans.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/point.h" : "/Users/sam/Documents/src/3d/open-gl.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/ptTrans.h" : "/usr/include/math.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/ptTrans.h" : "/Users/sam/Documents/src/3d/matrix.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/matrix.h" : "/usr/include/stdio.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/matrix.h" : "/usr/include/stdlib.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/open-gl.h" : "/System/Library/Frameworks/AGL.framework/Headers/agl.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/open-gl.h" : "/System/Library/Frameworks/OpenGL.framework/Headers/gl.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/open-gl.h" : "/usr/include/X11/extensions/xf86vmode.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/open-gl.h" : "/usr/include/X11/keysym.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/point.cc" : "/Users/sam/Documents/src/3d/point.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/ptTrans.cc" : "/Users/sam/Documents/src/3d/ptTrans.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/tex.cc" : "/Users/sam/Documents/src/3d/tex.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/tex.cc" : "/Users/sam/Documents/src/3d/matrix.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/tex.h" : "/Users/sam/Documents/src/3d/open-gl.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/tex.h" : "/Users/sam/Documents/src/3d/rand.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/rand.h" : "/usr/include/time.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/rand.h" : "/usr/include/stdlib.h" ;
+	INCLUDES "/Users/sam/Documents/src/3d/rand.h" : "/usr/include/math.h" ;
+}
+
+DefineHeaderDependencies "<woods>woods.saver" ;
+
