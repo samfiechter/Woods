@@ -1,0 +1,15 @@
+
+alpha3D.cc,345
+#define MAXZ 50,2319
+#define MINZ 51,2336
+#define ZINC 52,2354
+static float solidZ 54,2372
+static float transparentZ 55,2400
+static GLuint sphereList,56,2434
+static GLuint sphereList, cubeList;56,2434
+static void init(58,2471
+void display(83,3110
+void reshape(116,4106
+void animate(131,4529
+void keyboard(143,4734
+int main(163,5108
